@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 app.use('/' , mainRoutes);
 
 // synching database and listening to port
-db.sequelize.sync({ force: false }).then(function() {
+db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
     console.log(`Now listening to Port ... ${PORT}`);
   });
