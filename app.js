@@ -2,6 +2,10 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var mainRoutes = require('./routes/main');
+var db = require('./models');
+
+// Read and set environment variables
+require("dotenv").config();
 
 // setting up express app
 var app = express();
@@ -23,7 +27,9 @@ app.use(bodyParser.json());
 // setting up app to use route
 app.use('/' , mainRoutes);
 
-// listening to port
-app.listen(PORT , () => {
-    console.log(`Listening to Port ... ${PORT}`);
+// synching database and listening to port
+db.sequelize.sync({ force: false }).then(function() {
+  app.listen(PORT, function() {
+    console.log(`Now listening to Port ... ${PORT}`);
+  });
 });
