@@ -32,6 +32,15 @@ body{
   margin-bottom: 10px;
 }
 
+/* profile page */
+#profileAvatar{
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* homepage slick carousel */
 .homeCreams{
   width: 80%;
   height: 75%;
@@ -39,6 +48,14 @@ body{
   margin-top:3%;
 }
 
+/* profile page slick carousel */
+#freezer{
+  width: 100%;
+  height: 200px;
+  margin:0px auto;
+}
+
+/* global slick carousel styles */
 .slider{
   text-align: center;
 }
@@ -49,6 +66,7 @@ body{
 .slick-slide{
   background-color: #fff;
   opacity: .6;
+  margin-right:10px;
 }
 .slick-center{
   display: block;
