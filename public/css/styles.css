@@ -1,11 +1,58 @@
-/* Credit to bootsnipp.com for the css for the color graph */
-.colorgraph {
-  height: 5px;
-  border-top: 0;
-  background: #c4e17f;
-  border-radius: 5px;
-  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+body{
+  background-color: #99ccff !important;
+}
+
+.navbar, .navbar-default {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar, .navbar-default, .navbar-collapse {
+  background-image: none;
+  background-color: rgba(255,255,255,.4) !important;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#navBubbles{
+  width:50px;
+  position:absolute;
+  z-index: 1000000;
+  top:10px;
+  right:10px;
+}
+
+#userButton, #addButton, #searchButton{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:#fff;
+  margin-bottom: 10px;
+}
+
+.homeCreams{
+  width: 80%;
+  height: 600px;
+  margin:0px auto;
+  margin-top:80px;
+}
+
+.slider{
+  text-align: center;
+}
+
+.slider div{
+  margin-right: 25px;
+}
+.slick-slide{
+  background-color: #fff;
+  opacity: .6;
+}
+.slick-center{
+  display: block;
+  opacity: 1;
+  transform: scale(1.4);
+  z-index:500000;
 }
