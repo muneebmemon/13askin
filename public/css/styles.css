@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'Scripty';
+  src: url('../scriptFont.ttf');
+}
+
 body{
-  background-color: #99ccff !important;
+  background-color: #dfefff !important;
+  font-family: "Scripty";
 }
 
 .navbar, .navbar-default {
@@ -16,9 +22,13 @@ body{
   box-shadow: none;
 }
 
+.navbar-brand{
+  width: 550px;
+}
+
 #navBubbles{
   width:50px;
-  position:absolute;
+  position:fixed;
   z-index: 1000000;
   top:10px;
   right:10px;
@@ -32,27 +42,105 @@ body{
   margin-bottom: 10px;
 }
 
+/* home page */
+#activeTitle{
+  position: absolute;
+  min-width: 450px;
+  width: 35%;
+  height: 120px;
+  background-color: rgba(255,255,255, .8);
+  border-radius: 15px;
+  z-index: 1000000000;
+  display: block;
+  top: 9%;
+}
+
+#activeDescription{
+  position: absolute;
+  width: 40%;
+  min-width: 520px;
+  height: 350px;
+  background-color: rgba(255,255,255, .8);
+  border-radius: 15px;
+  z-index: 1000000000;
+  display: block;
+  bottom: 10%;
+  right: 5%;
+}
+
+#searchBox{
+  position: fixed;
+  display: none;
+  height: 50px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  top: 130px;
+  right: 10px;
+}
+
+#searchBox > div {
+  margin-top:10px;
+}
+
 /* profile page */
 #profileAvatar{
   background-color: #fff;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  margin: 0px auto;
+  margin-bottom: 10px;
+}
+
+#profileInfo{
+  margin-top:7%;
+}
+
+.profileWell{
+  width: 80%;
+}
+
+.profileBtn{
+  width:100%;
+  height: 33px;
+  margin-bottom: 1px;
+}
+
+#profileForm{
+  margin-bottom: 10px;
+}
+
+#addon1, #addon2, #addon3{
+  width:100px;
+}
+
+#profileForm > .input-group {
+  width: 100%;
+}
+
+.homeWrapper{
+  width: 90%;
+  margin: 0px auto;
 }
 
 /* homepage slick carousel */
 .homeCreams{
-  width: 80%;
+  width: 100%;
   height: 75%;
   margin:0px auto;
-  margin-top:3%;
+  margin-top:5%;
 }
 
 /* profile page slick carousel */
 #freezer{
   width: 100%;
-  height: 200px;
+  height: 350px;
   margin:0px auto;
+}
+
+#freezer > div > div > div > img {
+  margin-top: 50px;
 }
 
 /* global slick carousel styles */
@@ -64,8 +152,8 @@ body{
   margin-right: 25px;
 }
 .slick-slide{
-  background-color: #fff;
-  opacity: .6;
+  background-color: transparent;
+  /* vopacity: .6; */
   margin-right:10px;
 }
 .slick-center{
@@ -75,6 +163,12 @@ body{
   z-index:500000;
 }
 
+.slick-slide img {
+  min-width: calc(100% - 100px);
+  height: 70%;
+  margin:0px auto;
+  margin-top:120px;
+}
 
 /* styles for the login modal  */
 #login_modal{
