@@ -24,6 +24,7 @@ body{
 
 .navbar-brand{
   width: 550px;
+  margin-left: 20px;
 }
 
 #navBubbles{
@@ -48,7 +49,11 @@ body{
   min-width: 450px;
   width: 35%;
   height: 120px;
-  background-color: rgba(255,255,255, .8);
+  /* background-color: rgba(255,255,255, .8); */
+  background-image: url("/SVG/titleBox.svg");
+  background-size: stretch contain;
+  background-repeat: no-repeat;
+  background-position:center;
   border-radius: 15px;
   z-index: 1000000000;
   display: block;
@@ -60,7 +65,11 @@ body{
   width: 40%;
   min-width: 520px;
   height: 350px;
-  background-color: rgba(255,255,255, .8);
+  /* background-color: rgba(255,255,255, .8); */
+  background-image: url("/SVG/descBox.svg");
+  background-size: cover contain;
+  background-repeat: no-repeat;
+  background-position:center;
   border-radius: 15px;
   z-index: 1000000000;
   display: block;
