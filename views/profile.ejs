@@ -1,6 +1,9 @@
 <html>
 <% include partials/header.ejs %>
-    <div class="container">
+    <div class="container profileWell" id="profileInfo">
+        <div id="infoHeader">
+            <span id="infoTitle">Profile Info</span>
+        </div>
         <div class="jumbotron">
             <div class="row">
                 <div class="form-group">
@@ -9,28 +12,29 @@
                         <div class="col-lg-2 col-md-2 col-sm-2">
                             <div id="profileAvatar"></div>
                         </div>
+
                         <!-- form fields -->
-                        <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="col-lg-8 col-md-8 col-sm-8" id="profileForm">
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon1">Name</span>
-                                <input type="text" class="form-control" placeholder="Telll us what to call you" aria-describedby="basic-addon1">
+                                <span class="input-group-addon" id="addon1">Name</span>
+                                <input type="text" class="form-control" placeholder="Tell us what to call you" aria-describedby="basic-addon1">
                             </div>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon1">Email</span>
+                                <span class="input-group-addon" id="addon2">Email</span>
                                 <input type="text" class="form-control" placeholder="... " aria-describedby="basic-addon1">
                             </div>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon1">Password</span>
+                                <span class="input-group-addon" id="addon3">Password</span>
                                 <input type="text" class="form-control" placeholder="8-12 characters" aria-describedby="basic-addon1">
                             </div>
                         </div>
                         <!-- buttons -->
                         <div class="col-lg-2 col-md-2 col-sm-2">
-                            <button>Edit</button>
+                            <button class="profileBtn">Edit</button>
                             <br/>
-                            <button>Save</button>
+                            <button class="profileBtn">Save</button>
                             <br/>
-                            <button>Cancel</button>
+                            <button class="profileBtn">Cancel</button>
                         </div>
                     </form>
                 </div>
@@ -39,38 +43,51 @@
     </div>
 
     <!-- freezer gallery -->
-    <div class="container">
+    <div class="container profileWell">
+        <div id="freezerHeader">
+            <span id="freezerTitle">Freezer: </span>
+            <span id="freezerCount">[# of flavors] + </span>
+        </div>
         <div class="row">
             <div id="freezer">
-                <div class="freezerPic">
-                    1
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
                 </div>
-                <div class="freezerPic">
-                    2
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
                 </div>
-                <div class="freezerPic">
-                    3
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
                 </div>
-                <div class="freezerPic">
-                    4
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
                 </div>
-                <div class="freezerPic">
-                    5
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
                 </div>
-                <div class="freezerPic">
-                    6
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
                 </div>
-                <div class="freezerPic">
-                    7
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
                 </div>
-                <div class="freezerPic">
-                    8
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
                 </div>
-                <div class="freezerPic">
-                    9
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
                 </div>
-                <div class="freezerPic">
-                    10
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
+                </div>
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
+                </div>
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
+                </div>
+                <div class="pic">
+                    <img src="\SVG\iceCream.svg">
                 </div>
             </div>
         </div>
