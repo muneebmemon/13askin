@@ -1,7 +1,7 @@
-.modal {
+#myModal {
     display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 1000000000000000; 
     left: 0;
     top: 0;
     width: 100%; 
@@ -12,7 +12,7 @@
 }
 
 /* Modal Content/Box */
-.modal-content {
+#galleryPics {
     background-color: #fefefe;
     margin: 15% auto; 
     padding: 20px;
@@ -34,17 +34,27 @@
     text-decoration: none;
     cursor: pointer;
 }
-p {
+
+/* p {
     text-align: center;
     font-size: 24px;
     color: palevioletred;
+} */
+
+
+.galImg{
+    width:100px;
 }
-img {
-    width:300px;
-    height:290px;
-}
-svg{
+
+#svg-container{
     height:600px;
     width:600px;
 }
 
+#coneBackground{
+    height:600px;
+  }
+  
+  .cls-1 {
+    fill:transparent;
+  }

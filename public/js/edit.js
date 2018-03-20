@@ -64,5 +64,7 @@ if (event.target == modal) {
  
  
 
-
+ $( "#color2" ).change(function() {
+    alert( "Handler for .change() called." );
+  });
        
