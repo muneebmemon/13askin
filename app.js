@@ -3,6 +3,8 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var mainRoutes = require('./routes/main');
 var db = require('./models');
+var session = require("express-session");
+var passport = require("./config/passport");
 
 // Read and set environment variables
 require("dotenv").config();
@@ -24,8 +26,15 @@ app.use(express.static(path.join(__dirname , 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
+
 // setting up app to use route
-app.use('/' , mainRoutes);
+require("./routes/html-routes.js")(app);
+require("./routes/api-routes.js")(app);
+
+//app.use('/' , mainRoutes);
 
 // synching database and listening to port
 db.sequelize.sync({ force: true }).then(function() {
