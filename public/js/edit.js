@@ -62,9 +62,14 @@ if (event.target == modal) {
  };
  img.src = url;
  
- 
+ $('#color').colorpicker().on('changeColor', function(ev){
+    // var fillColor = ev.color;
+    $("#scoopFill").css({ fill: ev.color });
+});
+$('#color2').colorpicker().on('changeColor', function(ev){
+    // var fillColor = ev.color;
+    $("#coneFill").css({ fill: ev.color });
+});
 
- $( "#color2" ).change(function() {
-    alert( "Handler for .change() called." );
-  });
+
        
