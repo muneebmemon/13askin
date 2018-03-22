@@ -34,7 +34,9 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   User.prototype.validPassword = function(password) {
-    return bcrypt.compareSync(password, this.password);
+    const result = bcrypt.compareSync(password, this.password)
+    console.log('validating bcrypt')
+    return result
   };
   
   // Hooks are automatic methods that run during various phases of the User Model lifecycle
