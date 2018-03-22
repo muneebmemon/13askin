@@ -1,22 +1,22 @@
 {
   "development": {
     "username": "root",
-    "password": "mypassword1927",
+    "password": "",
     "database": "13askin",
-    "port" : 3360,
+    "port" : 3306,
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "root",
+    "password": "",
     "database": "13askin",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "root",
+    "password": "",
     "database": "13askin",
     "host": "127.0.0.1",
     "dialect": "mysql"
