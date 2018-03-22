@@ -33,7 +33,7 @@ app.get("/", function(req, res) {
   app.get("/profile", isAuthenticated, function(req, res) {
     console.log('rendering profile... ')
     // console.log('profile isauth : ', isAuthenticated)
-    res.render('profile')
+    res.render('profile' , {user: req.user});
   });
 
   app.get("/add", isAuthenticated, function(req, res) {

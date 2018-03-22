@@ -10,31 +10,20 @@
                     <form>
                         <!-- avatar -->
                         <div class="col-lg-2 col-md-2 col-sm-2">
-                            <div id="profileAvatar"></div>
+                            <div id="profileAvatar"><img src=https://avatars.io/twitter/<%=user.avatar %> class='img-responsive'></div>
                         </div>
 
                         <!-- form fields -->
                         <div class="col-lg-8 col-md-8 col-sm-8" id="profileForm">
                             <div class="input-group">
-                                <span class="input-group-addon" id="addon1">Name</span>
-                                <input type="text" class="form-control" placeholder="Tell us what to call you" aria-describedby="basic-addon1">
+                                <span class="input-group-addon" id="addon1">Name: </span>
+                                <span><%= user.name %></span>
                             </div>
                             <div class="input-group">
-                                <span class="input-group-addon" id="addon2">Email</span>
-                                <input type="text" class="form-control" placeholder="... " aria-describedby="basic-addon1">
+                                <span class="input-group-addon" id="addon2">Email: </span>
+                                <span><%= user.email %></span>
                             </div>
-                            <div class="input-group">
-                                <span class="input-group-addon" id="addon3">Password</span>
-                                <input type="text" class="form-control" placeholder="8-12 characters" aria-describedby="basic-addon1">
-                            </div>
-                        </div>
-                        <!-- buttons -->
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <button class="profileBtn">Edit</button>
-                            <br/>
-                            <button class="profileBtn">Save</button>
-                            <br/>
-                            <button class="profileBtn">Cancel</button>
+        
                         </div>
                     </form>
                 </div>
