@@ -57,3 +57,7 @@
   .cls-1 {
     fill:transparent;
   }
+
+  #coneFill #scoopFill{
+      z-index: 10000000000000000000000;
+  }
