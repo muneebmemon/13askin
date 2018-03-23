@@ -60,13 +60,13 @@ body{
   top: 9%;
 }
 
-#activeDescription{
+#exampleTextarea1{
   position: absolute;
   width: 40%;
   min-width: 520px;
-  height: 350px;
+  height: 150px;
   /* background-color: rgba(255,255,255, .8); */
-  background-image: url("/SVG/descBox.svg");
+ 
   background-size: cover contain;
   background-repeat: no-repeat;
   background-position:center;
