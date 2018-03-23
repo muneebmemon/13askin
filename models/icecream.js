@@ -1,20 +1,12 @@
 module.exports = function(sequelize, DataTypes) {
 var Icecream = sequelize.define('Icecream', {
-   id: {
-     type: DataTypes.INTEGER,
-     autoIncrement: true,
-     primaryKey: true
-   },
    icecream_name: {
      type: DataTypes.STRING,
      allowNull: true
    },
    email: {
      type: DataTypes.STRING,
-     allowNull: false,
-     validate: {
-       isEmail: true
-     }
+     allowNull: true
    },
    description: {
      type: DataTypes.STRING,
@@ -27,8 +19,22 @@ var Icecream = sequelize.define('Icecream', {
    cone_color: {
        type: DataTypes.STRING,
        allowNull: false
+   },
+   canvas: {
+        type: DataTypes.TEXT,
+        allowNull: false
    }
  });
+
+ Icecream.associate = function(models) {
+  // We're saying that a Post should belong to an Author
+  // A Post can't be created without an Author due to the foreign key constraint
+  Icecream.belongsTo(models.User, {
+    foreignKey: {
+      allowNull: false
+    }
+  });
+};
 
  return Icecream;
 }

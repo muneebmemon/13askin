@@ -37,7 +37,7 @@ require("./routes/api-routes.js")(app);
 //app.use('/' , mainRoutes);
 
 // synching database and listening to port
-db.sequelize.sync({force: true}).then(function() {
+db.sequelize.sync({}).then(function() {
   app.listen(PORT, function() {
     console.log(`Now listening to Port ... ${PORT}`);
   });
