@@ -49,12 +49,18 @@ module.exports = function (app) {
   // });
 
   //save new icecream to Icecream table
+  app.get('/api/allicecreams', function(req,res) {
+    db.Icecream.findAll({}).then(function(dbPost) {
+      console.log('myicecream: ', dbPost)
+      res.json(dbPost);
+    });
+  });
+
   app.get('/api/myicecreams', function(req,res) {
     UserId = req.session.passport.user.id;
     db.Icecream.findAll({
       where: { UserId: UserId }
     }).then(function(dbPost) {
-      console.log('myicecream: ', dbPost)
       res.json(dbPost);
     });
   });

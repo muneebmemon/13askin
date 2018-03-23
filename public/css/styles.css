@@ -58,6 +58,13 @@ body{
   z-index: 1000000000;
   display: block;
   top: 9%;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  font-size: 5em;
+  justify-content: center;
+  
 }
 
 #activeDescription{
@@ -75,6 +82,12 @@ body{
   display: block;
   bottom: 10%;
   right: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+  font-size: 2.5em;
+  overflow: scroll;
 }
 
 #searchBox{
