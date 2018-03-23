@@ -56,4 +56,28 @@ module.exports = function(app) {
       });
     }
   });
+
+
+    // Route for making a new ice cream flavor in the database
+  app.post("/api/add", function(req, res) {
+    console.log(req.body);
+    db.Icecream.create({
+      icecream_name: req.body.name,
+      // email: req.body.password, - how to do this ? 
+      scoop_color: req.body.scoop,
+      cone_color: req.body.cone,
+      description: req,body,description
+    })
+      .then(function() {
+        res.redirect(307, "/home");
+      })
+      .catch(function(err) {
+        console.log(err);
+        res.json(err);
+        // res.status(422).json(err.errors[0].message);
+      });
+  });
+
+
+  // end routes
 };
