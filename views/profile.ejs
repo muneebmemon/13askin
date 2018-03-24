@@ -2,39 +2,44 @@
 <% include partials/header.ejs %>
     <div class="container profileWell" id="profileInfo">
         <div id="infoHeader">
-            <span id="infoTitle">Profile Info</span>
+            <!-- <span id="infoTitle">Profile Info</span> -->
+            <span id="infoTitle" style="font-size:34px;">Profile Info</span>
         </div>
-        <div class="jumbotron">
-            <div class="row">
-                <div class="form-group">
-                    <form>
-                        <!-- avatar -->
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <div id="profileAvatar"><img src=https://avatars.io/twitter/<%=user.avatar %> class='img-responsive'></div>
-                        </div>
+       
+                         
+                         <div class="jumbotron" style="height:300px">
+                                  <h1 class="display-3">Hello, Ice Cream Lover!</h1>
+                                   <!-- avatar -->
+                                   <div class="col-lg-2 col-md-2 col-sm-2">
+                                     <div id="profileAvatar"><img src=https://avatars.io/twitter/<%=user.avatar %> class='img-responsive'></div>
+                                   </div>
+                                  <form>
+                                     
                         
                         <!-- form fields -->
-                        <div class="col-lg-8 col-md-8 col-sm-8" id="profileForm">
-                            <div class="input-group">
-                                <span class="input-group-addon" id="addon1">Name: </span>
-                                <span><%= user.name %></span>
-                            </div>
-                            <div class="input-group">
-                                <span class="input-group-addon" id="addon2">Email: </span>
-                                <span><%= user.email %></span>
-                            </div>
-        
-                        </div>
-                    </form>
+                       
+                    <div class="col-lg-8 col-md-8 col-sm-8" id="profileForm">
+                            
+                           
+                                 <div class="input-group">
+                                     <span class="input-group-addon"  id="addon1" style="width:165px; height:50px;">Name: </span>
+                                     <span style="font-size:24px; margin-left: 30px;"><%= user.name %></span>
+                                   </div> 
+                                 <div class="input-group">
+                                    <span class="input-group-addon" id="addon2" style="width:165px; height:50px;">Email: </span>
+                                       <span style="font-size:24px; margin-left: 30px;"><%= user.email %></span>
+                                  </div>
                 </div>
-            </div>
-        </div>
+          
+    </div>
+</form>
+    </div>
     </div>
 
     <!-- freezer gallery -->
     <div class="container profileWell">
         <div id="freezerHeader">
-            <span id="freezerTitle">Freezer: </span>
+            <span id="freezerTitle" style="font-size:34px;">Freezer: </span>
             <span id="freezerCount">[# of flavors] + </span>
         </div>
         <div class="row">
