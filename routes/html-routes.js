@@ -41,6 +41,7 @@ app.get("/", function(req, res) {
   });
 
   app.get("/add", isAuthenticated, function(req, res) {
+    console.log(req.session)
     res.render("add");
   });
 

@@ -16,8 +16,8 @@
 
 // });
 
-$(document).ready(function() {
-	$("#login-form-link").click(function(e) {
+$(document).ready(function () {
+  $("#login-form-link").click(function (e) {
     $("#login-form")
       .delay(100)
       .fadeIn(100);
@@ -27,7 +27,7 @@ $(document).ready(function() {
     e.preventDefault();
   });
 
-  $("#register-form-link").click(function(e) {
+  $("#register-form-link").click(function (e) {
     $("#register-form")
       .delay(100)
       .fadeIn(100);
@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   // When the form is submitted, we validate there's an email and password entered
-  loginForm.on("submit", function(event) {
+  loginForm.on("submit", function (event) {
     var emailInput = $("#lemail");
     var passwordInput = $("#lpassword");
     console.log('loginform submit')
@@ -71,14 +71,14 @@ $(document).ready(function() {
       email: email,
       password: password
     })
-      .then(function(data) {
+      .then(function (data) {
         console.log(data)
         window.location.replace(data.redirect);
         // If there's an error, log the error
       })
-      // .error(function(err) {
-      //   console.log(err);
-      // });
+    // .error(function(err) {
+    //   console.log(err);
+    // });
   }
 
   var signUpForm = $("form#register-form");
@@ -89,14 +89,14 @@ $(document).ready(function() {
 
 
   // When the signup button is clicked, we validate the email and password are not blank
-  signUpForm.on("submit", function(event) {
+  signUpForm.on("submit", function (event) {
     console.log('signupform submit')
     event.preventDefault();
-    var userData = { 
-      email: emailInput.val().trim(), 
-      password: passwordInput.val().trim(), 
-      name: userInput.val().trim(), 
-      avatar: avatarInput.val().trim(), 
+    var userData = {
+      email: emailInput.val().trim(),
+      password: passwordInput.val().trim(),
+      name: userInput.val().trim(),
+      avatar: avatarInput.val().trim(),
     };
     console.log(userData)
 
@@ -116,7 +116,7 @@ $(document).ready(function() {
   function signUpUser(email, password, username, avatar) {
     console.log('signup post')
     $.post("/api/signup", { email: email, password: password, name: username, avatar: avatar })
-      .then(function(data) {
+      .then(function (data) {
         window.location.replace(data);
         // If there's an error, handle it by throwing up a boostrap alert
       });
