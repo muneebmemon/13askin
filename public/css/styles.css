@@ -298,3 +298,8 @@ border-color: #1CA347;
 }
 
 
+#conebackground{
+  width:200px;
+  height:500px;
+  margin-left:20px;
+}
