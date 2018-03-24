@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "",
+    "password": "mypassword1927",
     "database": "13askin",
-    "port" : 3306,
+    "port" : 3360,
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -15,10 +15,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "",
-    "database": "13askin",
-    "host": "127.0.0.1",
+    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
-  }
+    }
 }
