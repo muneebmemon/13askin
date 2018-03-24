@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "password",
+    "password": "mypassword1927",
     "database": "13askin",
     "port" : 3360,
     "host": "127.0.0.1",
