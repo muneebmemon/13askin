@@ -296,5 +296,80 @@ color: #fff;
 background-color: #1CA347;
 border-color: #1CA347;
 }
+#coneBackground{
+  width: 200px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem1 slick-slide slick-active{
+  width: 200px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem2 slick-slide slick-active{
+  width: 200px;
+  height: 500px;
+  margin-left: 100px;
+}
 
+.canvasItem3 slick-slide slick-active{
+  width: 200px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem1 slick-slide{
+  width: 200px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem2 slick-slide{
+  width: 200px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem3 slick-slide{
+  width: 200px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem0 slick-slide slick-current slick-active slick-center{
+  width: 300px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem1 slick-slide slick-current slick-active slick-center{
+  width: 300px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem2 slick-slide slick-current slick-active slick-center{
+  width: 300px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem3 slick-slide slick-current slick-active slick-center{
+  width: 300px;
+  height: 500px;
+  margin-left: 100px;
+}
 
+.canvasItem0 slick-slide slick-cloned slick-active{
+  width: 300px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem1 slick-slide slick-cloned slick-active{
+  width: 300px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem2 slick-slide slick-cloned slick-active{
+  width: 300px;
+  height: 500px;
+  margin-left: 100px;
+}
+.canvasItem3 slick-slide slick-cloned slick-active{
+  width: 300px;
+  height: 500px;
+  margin-left: 100px;
+}
