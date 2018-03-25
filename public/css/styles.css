@@ -6,6 +6,7 @@
 body{
   background-color: #fff ;
   font-family: "Scripty";
+  padding-top: 90px;
 }
 
 .navbar, .navbar-default {
@@ -46,31 +47,48 @@ body{
 /* home page */
 #activeTitle{
   position: absolute;
-  width: 450px;
-  height: 120px;
+  width: auto;
+  /* height:140px; */
   /* background-color: rgba(255,255,255, .8); */
   background-image: url("/SVG/titleBox.svg");
-  background-size: stretch contain;
+  object-fit: fill;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position:center;
   border-radius: 15px;
   z-index: 1000000000;
   display: block;
   top: 9%;
-  padding:10px 20px;
-  font-size: 5em;
+  padding: 50px;
+  font-size: 4em;
   justify-content: center;
   
 }
 
+/* #activeTitle svg{
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  z-index: -1;
+  position: absolute;
+} */
+
+#titleSpan{
+  z-index:40;
+  position:relative;
+  padding:20px 40px;
+}
+
+
 #activeDescription{
   position: absolute;
-  max-width: 647px;
+  width: 40% auto;
+  max-width:800px;
   min-width: 520px;
   height: 272px;
   /* background-color: rgba(255,255,255, .8); */
   background-image: url("/SVG/descBox.svg");
-  background-size: stretch;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position:center;
   border-radius: 15px;
@@ -78,8 +96,19 @@ body{
   display: block;
   bottom: 10%;
   right: 5%;
-  padding: 50px 30px;
+  padding: 50px;
   font-size: 2.5em;
+}
+
+/* #activeDescription svg{
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: relative;
+} */
+
+#descSpan{
+  z-index:40;
 }
 
 #searchBox{
@@ -141,7 +170,7 @@ body{
 /* homepage slick carousel */
 .homeCreams{
   width: 100%;
-  height: 75%;
+  height: 90%;
   margin:0px auto;
   margin-top:5%;
 }
@@ -162,6 +191,10 @@ body{
   text-align: center;
 }
 
+.slide {
+  display:inline-block;
+}
+
 .slider div{
   margin-right: 25px;
 }
@@ -170,6 +203,10 @@ body{
   /* vopacity: .6; */
   margin-right:10px;
 }
+
+.homePic{
+   vertical-align: middle; 
+}
 .slick-center{
   display: block;
   opacity: 1;
@@ -177,11 +214,16 @@ body{
   z-index:500000;
 }
 
-.slick-slide img {
+.slick-slide svg {
   min-width: calc(100% - 100px);
-  height: 70%;
+  height: 75%;
   margin:0px auto;
-  margin-top:120px;
+  max-width: 70%;
+}
+
+body > div.homeWrapper > div.homeCreams.slick-initialized.slick-slider > div{
+  padding: 50px 50px !important;
+  overflow: visible;
 }
 
 /* styles for the login modal  */
@@ -189,9 +231,8 @@ body{
   margin-top: 80px;
 }
 
-body {
-  padding-top: 90px;
-}
+
+
 .panel-login {
 border-color: #ccc;
 -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
@@ -288,82 +329,3 @@ color: #fff;
 background-color: #1CA347;
 border-color: #1CA347;
 }
-
-#coneBackground{
-  width: 200px;
-  height: 500px;
-  margin-left: 80px;
-}
-
-
-/* .canvasItem1 slick-slide slick-active{
-  width: 200px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem2 slick-slide slick-active{
-  width: 200px;
-  height: 500px;
-  margin-left: 100px;
-}
-
-.canvasItem3 slick-slide slick-active{
-  width: 200px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem1 slick-slide{
-  width: 200px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem2 slick-slide{
-  width: 200px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem3 slick-slide{
-  width: 200px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem0 slick-slide slick-current slick-active slick-center{
-  width: 300px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem1 slick-slide slick-current slick-active slick-center{
-  width: 300px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem2 slick-slide slick-current slick-active slick-center{
-  width: 300px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem3 slick-slide slick-current slick-active slick-center{
-  width: 300px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem0 slick-slide slick-cloned slick-active{
-  width: 300px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem1 slick-slide slick-cloned slick-active{
-  width: 300px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem2 slick-slide slick-cloned slick-active{
-  width: 300px;
-  height: 500px;
-  margin-left: 100px;
-}
-.canvasItem3 slick-slide slick-cloned slick-active{
-  width: 300px;
-  height: 500px;
-  margin-left: 100px;
-} */
