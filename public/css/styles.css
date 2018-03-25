@@ -216,6 +216,15 @@ body{
   margin-right:10px;
 }
 
+.slick-slide:focus{
+  outline: 0px transparent !important;
+}
+
+#freezer > div > div > div > .slick-side:hover {
+  background-color: rgba(209, 211, 236, 0.527) !important;
+}
+
+
 .slick-arrow{
   z-index: 10000000000000000000 !important;
   background: #fff !important;
@@ -351,6 +360,23 @@ background-color: #1CA347;
 border-color: #1CA347;
 }
 
+
+#profileInfo > div.jumbotron{
+  border: 18px solid;
+  background-color: rgba(255,255,255, .8) !important;
+  -webkit-border-image: url("/images/hand-drawn/Asset 366.png") 30 stretch;
+  -o-border-image: url("/images/hand-drawn/Asset 366.png") 30 stretch;
+  border-image: url("/images/hand-drawn/Asset 366.png") 30 stretch;
+  border-image-slice: 50;
+  background-clip: padding-box;
+  border-radius: 15px;
+  z-index: 1000000000;
+  display: block;
+  bottom: 10%;
+  right: 5%;
+  padding: 10px 20px;
+  /* font-size: 2.5em; */
+}
 
 @media only screen and (max-width: 1424px) {
   .slick-slide svg {
