@@ -24,6 +24,41 @@ body{
   box-shadow: none;
 }
 
+/* *************************************** */
+/* scrollbar */
+/* *************************************** */
+
+/* width */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(8, 8, 8); 
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(79, 40, 150); 
+}
+
+::-webkit-scrollbar-thumb:vertical
+{
+    background:black url('SVG/hand-drawn/Asset 396') no-repeat;
+    background-size:6px 14px;  
+    background-position:;
+    display: block;
+    width: 30px;
+    height: 100px;
+}
+
 .navbar-brand{
   width: 750px;
   margin-left: 20px;
@@ -91,7 +126,9 @@ body{
   width: 40% auto;
   max-width:800px;
   min-width: 520px;
-  height: 272px;
+  height: auto;
+  max-height:400px;
+  overflow-y: auto;
   border: 18px solid;
   background-color: rgba(255,255,255, .8);
   -webkit-border-image: url("/images/hand-drawn/Asset 428.png") 30 stretch;
@@ -415,12 +452,15 @@ border-color: #1CA347;
 
   #activeTitle{
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 2em;
   }
 
   #activeDescription{
-    min-width: 420px;
+    min-width: 90%;
     max-width: 90%;
+    height: auto;
+    max-height:400px;
+    overflow-y: auto;
     bottom: 10%;
     right: 5%;
     padding: 10px 20px;
