@@ -16,6 +16,7 @@ npm installation will get you set up with the right node packages
 ## Usage
 
 Imagine yelling the name of a famous ice cream shop into a cave.  Our app fulfills the dire need we all have for additional endless clickhole entertainment.  Maybe you can find Plato in here goofing around, too.
+![Bashkin Logo](/public/SVG/logo.svg)
 
 Home: Behold the absurdity of your fellow humans- browse other folks' flavors.  *Search coming soon.
 ![Home Page](/public/images/wireframes/1_Home.PNG)
@@ -39,4 +40,4 @@ Profile: Maintain your perosnal info.  Browse your past contributions to society
 
 Ellie, Anastasiia, Mohammad, Caitlin
 
-![Bashkin Logo](/public/SVG/logo.svg)
+
