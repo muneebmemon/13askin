@@ -208,6 +208,14 @@ body{
   margin-right:10px;
 }
 
+.slick-arrow{
+  z-index: 10000000000000000000 !important;
+  background: #fff !important;
+  height: 30px !important;
+  width: 30px !important;
+  border-radius:50%;
+}
+
 .homePic{
    vertical-align: middle; 
 }
