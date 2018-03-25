@@ -25,7 +25,7 @@ body{
 }
 
 .navbar-brand{
-  width: 550px;
+  width: 750px;
   margin-left: 20px;
 }
 
@@ -63,7 +63,6 @@ body{
   padding: 50px;
   font-size: 4em;
   justify-content: center;
-  
 }
 
 /* #activeTitle svg{
@@ -135,6 +134,10 @@ body{
   border-radius: 50%;
   margin: 0px auto;
   margin-bottom: 10px;
+}
+
+#profileAvatar img{
+  border-radius: 50%;
 }
 
 #profileInfo{
@@ -333,6 +336,19 @@ border-color: #1CA347;
 }
 
 
+@media only screen and (max-width: 1424px) {
+  .slick-slide svg {
+    min-width: calc(100% - 100px);
+    height: 85%;
+    /* margin: 0px auto; */
+    margin-left: 45px;
+    max-width: 60%;
+  }
+
+  .navbar-brand{
+    width: 550px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .slick-slide svg {
@@ -343,4 +359,17 @@ border-color: #1CA347;
     margin-left: 45px;
     max-width: 60%;
   }
+
+  .navbar-brand{
+    width: 30%;
+    min-width: 300px;
+  }
+
+  #activeTitle{
+    padding: 50px;
+    font-size: 2em;
+  }
+
 }
+
+
