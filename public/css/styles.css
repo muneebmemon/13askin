@@ -59,7 +59,7 @@ body{
   border-radius: 15px;
   z-index: 1000000000;
   display: block;
-  top: 9%;
+  top: 140px;
   padding: 50px;
   font-size: 4em;
   justify-content: center;
@@ -371,6 +371,10 @@ border-color: #1CA347;
   .navbar-brand{
     width: 30%;
     min-width: 300px;
+  }
+
+  .navbar{
+    background-color: transparent !important;
   }
 
   #activeTitle{
