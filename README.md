@@ -19,15 +19,12 @@ Imagine yelling the name of a famous ice cream shop into a cave.  Our app fulfil
 
 Home: Behold the absurdity of your fellow humans- browse other folks' flavors.  *Search coming soon.
 ![Home Page](/public/images/wireframes/1_Home.PNG)
-Format: ![Alt Text](url)
 
 Add: Create new ice cream flavors.  *Chunks and sprinkles coming soon.
-![Home Page]/public/images/wireframes/2_Add.PNG)
-Format: ![Alt Text](url)
+![Home Page](/public/images/wireframes/2_Add.PNG)
 
 Profile: Maintain your perosnal info.  Browse your past contributions to society.  Look into the freezer, uncle Ebeneezer.  *Chunks and sprinkles coming soon.
 ![Home Page](/public/images/wireframes/3_Profile.PNG)
-Format: ![Alt Text](url)
 
 ## Technologies
 
