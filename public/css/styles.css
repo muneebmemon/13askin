@@ -4,7 +4,7 @@
 }
 
 body{
-  background-color: #dfefff !important;
+  background-color: #fff ;
   font-family: "Scripty";
 }
 
@@ -46,8 +46,7 @@ body{
 /* home page */
 #activeTitle{
   position: absolute;
-  min-width: 450px;
-  width: 35%;
+  width: 450px;
   height: 120px;
   /* background-color: rgba(255,255,255, .8); */
   background-image: url("/SVG/titleBox.svg");
@@ -58,23 +57,20 @@ body{
   z-index: 1000000000;
   display: block;
   top: 9%;
-  padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 10%;
+  padding:10px 20px;
   font-size: 5em;
   justify-content: center;
   
 }
 
-#exampleTextarea1{
+#activeDescription{
   position: absolute;
-  width: 40%;
+  max-width: 647px;
   min-width: 520px;
-  height: 150px;
+  height: 272px;
   /* background-color: rgba(255,255,255, .8); */
-  /* background-image: url("/SVG/descBox.svg"); */
-  background-size: cover contain;
+  background-image: url("/SVG/descBox.svg");
+  background-size: stretch;
   background-repeat: no-repeat;
   background-position:center;
   border-radius: 15px;
@@ -82,12 +78,8 @@ body{
   display: block;
   bottom: 10%;
   right: 5%;
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 10%;
+  padding: 50px 30px;
   font-size: 2.5em;
-  overflow: scroll;
 }
 
 #searchBox{
