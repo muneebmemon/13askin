@@ -57,7 +57,7 @@ body{
   -o-border-image: url("/images/hand-drawn/Asset 363.png") 30 stretch;
   border-image: url("/images/hand-drawn/Asset 363.png") 30 stretch;
   border-image-slice: 50;
-  background-clip: border-box;
+  background-clip: padding-box;
   /* object-fit: fill; */
   /* background-size: 100% 100%; */
   /* background-repeat: no-repeat;
@@ -98,7 +98,7 @@ body{
   -o-border-image: url("/images/hand-drawn/Asset 428.png") 30 stretch;
   border-image: url("/images/hand-drawn/Asset 428.png") 30 stretch;
   border-image-slice: 50;
-  background-clip: border-box;
+  background-clip: padding-box;
   border-radius: 15px;
   z-index: 1000000000;
   display: block;
