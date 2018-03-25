@@ -219,7 +219,6 @@ body{
   min-width: calc(100% - 100px);
   height: 75%;
   /* margin: 0px auto; */
-  margin-top: 90px;
   margin-left: 45px;
   max-width: 60%;
 }
@@ -331,4 +330,17 @@ border-color: #1CB94A;
 color: #fff;
 background-color: #1CA347;
 border-color: #1CA347;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .slick-slide svg {
+    min-width: calc(100% - 100px);
+    height: 75%;
+    /* margin: 0px auto; */
+    margin-top: 90px;
+    margin-left: 45px;
+    max-width: 60%;
+  }
 }
