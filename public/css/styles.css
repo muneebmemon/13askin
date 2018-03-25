@@ -16,6 +16,7 @@ body{
 }
 
 .navbar, .navbar-default, .navbar-collapse {
+  height:100px;
   background-image: none;
   background-color: rgba(255,255,255,.4) !important;
   border: 0;
@@ -217,8 +218,10 @@ body{
 .slick-slide svg {
   min-width: calc(100% - 100px);
   height: 75%;
-  margin:0px auto;
-  max-width: 70%;
+  /* margin: 0px auto; */
+  margin-top: 90px;
+  margin-left: 45px;
+  max-width: 60%;
 }
 
 body > div.homeWrapper > div.homeCreams.slick-initialized.slick-slider > div{
