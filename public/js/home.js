@@ -44,15 +44,10 @@ $('document').ready(() => {
             centerMode: true,
             prevArrow: "<img class='a-left control-c prev slick-prev' src='/SVG/left.svg'>",
             nextArrow: "<img class='a-right control-c next slick-next' src='/SVG/right.svg''>",
-            slidesToShow: 5,
+            slidesToShow: 3,
+            mobileFirst: false,
             responsive: [{
-                    breakpoint: 1424,
-                    settings: {
-                        slidesToShow: 3,
-                        arrows: true,
-                        centerMode: true
-                    },
-                    breakpoint: 768,
+                    breakpoint: 1100,
                     settings: {
                         arrows: true,
                         centerMode: true,
