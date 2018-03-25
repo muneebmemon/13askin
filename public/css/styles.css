@@ -49,18 +49,24 @@ body{
 #activeTitle{
   position: absolute;
   width: auto;
-  /* height:140px; */
-  /* background-color: rgba(255,255,255, .8); */
-  background-image: url("/SVG/titleBox.svg");
-  object-fit: fill;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position:center;
+  /* height: 140px; */
+  background-color: rgba(255,255,255, .8);
+  /* background-image: url(/SVG/titleBox.svg); */
+  border: 22px solid;
+  -webkit-border-image: url("/images/hand-drawn/Asset 363.png") 30 stretch;
+  -o-border-image: url("/images/hand-drawn/Asset 363.png") 30 stretch;
+  border-image: url("/images/hand-drawn/Asset 363.png") 30 stretch;
+  border-image-slice: 50;
+  background-clip: border-box;
+  /* object-fit: fill; */
+  /* background-size: 100% 100%; */
+  /* background-repeat: no-repeat;
+  background-position: center; */
   border-radius: 15px;
   z-index: 1000000000;
   display: block;
   top: 140px;
-  padding: 50px;
+  padding: 10px 20px;
   font-size: 4em;
   justify-content: center;
 }
@@ -86,17 +92,19 @@ body{
   max-width:800px;
   min-width: 520px;
   height: 272px;
-  /* background-color: rgba(255,255,255, .8); */
-  background-image: url("/SVG/descBox.svg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position:center;
+  border: 18px solid;
+  background-color: rgba(255,255,255, .8);
+  -webkit-border-image: url("/images/hand-drawn/Asset 428.png") 30 stretch;
+  -o-border-image: url("/images/hand-drawn/Asset 428.png") 30 stretch;
+  border-image: url("/images/hand-drawn/Asset 428.png") 30 stretch;
+  border-image-slice: 50;
+  background-clip: border-box;
   border-radius: 15px;
   z-index: 1000000000;
   display: block;
   bottom: 10%;
   right: 5%;
-  padding: 50px;
+  padding: 10px 20px;
   font-size: 2.5em;
 }
 
@@ -378,8 +386,18 @@ border-color: #1CA347;
   }
 
   #activeTitle{
-    padding: 50px;
-    font-size: 2em;
+    padding: 10px 20px;
+    font-size: 4em;
+  }
+
+  #activeDescription{
+    min-width: 420px;
+    max-width: 90%;
+    bottom: 10%;
+    right: 5%;
+    padding: 10px 20px;
+    font-size: 2.5em;
+    word-wrap: break-word;
   }
 
 }
