@@ -39,8 +39,8 @@ $(document).ready(function () {
         event.preventDefault();
         // console.log("save");
         var icecreamName = $("#icecreamName")
-        var coneColor = $("#color");
-        var scoopColor = $("#color2");
+        var scoopColor = $("#color");
+        var coneColor = $("#color2");
         var desc = $("#desc")
         //save canvas to URL 
         var canvas = $("#canvas")

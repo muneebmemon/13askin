@@ -59,6 +59,24 @@ body{
     height: 100px;
 }
 
+.input-group-addon {
+  padding: 6px;
+  width: 100px !important;
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  font-size:22px;
+}
+
+#profileWell{
+  height:auto;
+  min-height: 150px;
+}
+
 .navbar-brand{
   width: 750px;
   margin-left: 20px;
@@ -84,6 +102,7 @@ body{
 #activeTitle{
   position: absolute;
   width: auto;
+  max-width: 40%;
   /* height: 140px; */
   background-color: rgba(255,255,255, .8);
   /* background-image: url(/SVG/titleBox.svg); */
@@ -98,7 +117,7 @@ body{
   /* background-repeat: no-repeat;
   background-position: center; */
   border-radius: 15px;
-  z-index: 1000000000;
+  z-index: 1000;
   display: block;
   top: 140px;
   padding: 10px 20px;
@@ -137,7 +156,7 @@ body{
   border-image-slice: 50;
   background-clip: padding-box;
   border-radius: 15px;
-  z-index: 1000000000;
+  z-index: 1000;
   display: block;
   bottom: 10%;
   right: 5%;
@@ -174,12 +193,14 @@ body{
 /* profile page */
 #profileAvatar{
   background-color: #fff;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  padding: 10px;
   margin: 0px auto;
   margin-bottom: 10px;
-  border-immage:
+  border: 35px auto;
+  border-image: url("../images/hand-drawn/Asset 337.png");
 }
 
 #profileAvatar img{
@@ -453,6 +474,7 @@ border-color: #1CA347;
   #activeTitle{
     padding: 10px 20px;
     font-size: 2em;
+    max-width: 90%;
   }
 
   #activeDescription{
