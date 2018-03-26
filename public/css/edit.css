@@ -46,14 +46,14 @@
     width:100px;
 }
 
-#svg-container{
+/* #svg-container{
     height:600px;
-}
+} */
 
-#coneBackground{
+/* #coneBackground{
     height:600px;
   }
-  
+   */
   .cls-1 {
     fill:transparent;
   }
@@ -61,3 +61,4 @@
   #coneFill #scoopFill{
       z-index: 10000000000000000000000;
   }
+  
