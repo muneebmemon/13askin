@@ -32,6 +32,7 @@ Profile: Maintain your perosnal info.  Browse your past contributions to society
 - [Node.js](#node)
 - [Passport.js](#)
 - [EJS]()
+- Express.js
 - HTML5
 - CSS3
 - jQuery & Javascript
