@@ -1,6 +1,6 @@
 # 13ashkin 
 
-A silly little ice cream app.
+Funny little Ice cream app where users can create absurd ice cream flavors and add them to their profile.
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ Add: Create new ice cream flavors.  *Chunks and sprinkles coming soon.
 Profile: Maintain your perosnal info.  Browse your past contributions to society.  Look into the freezer, uncle Ebeneezer.  *Chunks and sprinkles coming soon.
 ![Home Page](/public/images/wireframes/3_Profile.PNG)
 
-## Technologies
+## Technologies used
 
 - [Node.js](#node)
 - [Passport.js](#)
@@ -39,6 +39,9 @@ Profile: Maintain your perosnal info.  Browse your past contributions to society
 
 ## Contributors
 
-Ellie, Anastasiia, Mohammad, Caitlin
+* Ellie 
+* Anastasiia
+* Mohammad
+* Caitlin
 
 
