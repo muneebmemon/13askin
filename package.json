@@ -4,19 +4,19 @@
   "description": "Icecream app",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muneebmemon/13askin.git"
+    "url": "git+https://github.com/CaitlinEverett/13askin.git"
   },
   "author": "Mohammad, Caitlin, Anastasia, Ellie",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/muneebmemon/13askin/issues"
+    "url": "https://github.com/CaitlinEverett/13askin.issues"
   },
-  "homepage": "https://github.com/muneebmemon/13askin#readme",
+  "homepage": "https://github.com/CaitlinEverett/13askin#readme",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
@@ -30,7 +30,8 @@
     "passport-local": "^1.0.0",
     "require": "^2.4.20",
     "require.js": "^1.0.0",
-    "sequelize": "^4.37.2"
+    "sequelize": "^4.37.6"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "keywords": []
 }
